@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { FormTodoComponent } from './form-todo/form-todo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormTodoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
