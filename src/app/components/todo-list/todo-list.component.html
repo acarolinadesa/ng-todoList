@@ -6,6 +6,7 @@
   </span>
 
   <button (click)="deletar(index)">X</button>
+  <!-- <button (click)="deleteTest(index)">X</button> -->
 
   <button *ngIf="editIndex !== index" (click)="edit(index)">Edit</button>
   <button *ngIf="editIndex === index" (click)="submit(index, text)">Ok</button>

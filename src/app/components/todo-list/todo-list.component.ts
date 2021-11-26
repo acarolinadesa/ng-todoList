@@ -26,4 +26,8 @@ export class TodoListComponent {
     this.editIndex = null;
     this.editById.emit({ index, text });
   }
+
+  deleteTest(index: any) {
+    this.tasks.splice(index, 1)
+  }
 }
