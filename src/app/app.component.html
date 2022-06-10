@@ -10,6 +10,8 @@
     (onCadastrar)="addToList($event)"
   ></app-todo-form>
 
+   <!-- Componente pede uma variável e a passa como propriedade.
+    Toda vez que a variável é modificada, quem a passou também vê que ela está sendo modificadas, sem a necessidade de passar um evento.  -->
   <app-todo-list
     [tasks]="tasks"
     (deleteById)="removeFromList($event)"
